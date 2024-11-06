@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Data - Bienvenido</title>
+    <link rel="shortcut icon" href="imgs/icono.ico">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-title">
+            <img src="imgs/logo.png" alt="Logo de Café Data" class="logo">
+        </div>
+        <nav class="nav">
+            <a href="#menu">Menú</a>
+            <a href="#services">Servicios</a>
+            <a href="login.html" class="icon"><i class="bi bi-person"></i></a>
+            <a href="carrito.html" class="icon"><i class="bi bi-cart"></i></a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Un café y algo más para tu lado tecnológico</h2>
+        <p>Disfruta de nuestra especialidad en café y servicios para tus dispositivos.</p>
+    </section>
+
+    <section id="services" class="services">
+        <div class="service-content">
+            <h3>Servicios de Café Data</h3>
+            <ul class="service-list">
+                <li class="service-item">
+                    <i class="bi bi-brush service-icon"></i>
+                    <div class="service-text">
+                        <h4>Limpieza de equipos</h4>
+                        <p>Servicio completo de limpieza para mantener tus dispositivos en óptimas condiciones.</p>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <i class="bi bi-wrench service-icon"></i>
+                    <div class="service-text">
+                        <h4>Mantenimiento básico</h4>
+                        <p>Revisiones y ajustes básicos para mejorar el rendimiento de tus dispositivos.</p>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <i class="bi bi-laptop service-icon"></i>
+                    <div class="service-text">
+                        <h4>Areas de trabajo</h4>
+                        <p>Espacios cómodos y bien equipados para aquellos que deseen trabajar en sus proyectos personales o estudiar</p>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <i class="bi bi-person-lines-fill service-icon"></i>
+                    <div class="service-text">
+                        <h4>Asesoría Técnica Personalizada</h4>
+                        <p>Consultas técnicas sobre uso o recomendaciones de software según las necesidades del cliente.</p>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <i class="bi bi-wifi service-icon"></i>
+                    <div class="service-text">
+                        <h4>Wi-Fi de Alta Velocidad</h4>
+                        <p>Conexión a internet de alta velocidad para que trabajes o navegues sin interrupciones.</p>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <i class="bi bi-cup-straw service-icon"></i>
+                    <div class="service-text">
+                        <h4>Comida y Bebidas</h4>
+                        <p>Disfruta de una variedad de bebidas y snacks mientras trabajas en nuestros espacios.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h3>Menú de Café Data</h3>
+        <button class="edit" onclick="">Editar Información</button>
+        <button class="edit" onclick="">Agregar Producto</button>
+        <div class="card-container">
+            <div class="card">
+                <img src="imgs/te.jpg">
+                <h4>Té</h4>
+                <p class="price out-of-stock">$15 MXN</p>
+                <button class="add-to-cart" data-name="Té" data-price="15">Agregar al carrito</button>
+                <div class="edit-buttons" style="display: none;">
+                    <button class="delete-item" onclick="">Eliminar</button>
+                    <button class="update-price" onclick="">Actualizar Precio</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/cafe-caliente.jpg">
+                <h4>Café caliente</h4>
+                <p class="price out-of-stock">$15 MXN</p>
+                <button class="add-to-cart" data-name="Café" data-price="15">Agregar al carrito</button>
+                <div class="edit-buttons" style="display: none;">
+                    <button class="delete-item" onclick="">Eliminar</button>
+                    <button class="update-price" onclick="">Actualizar Precio</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/cafe-frio.png">
+                <h4>Café frío</h4>
+                <p class="price out-of-stock">$25 MXN</p>
+                <button class="add-to-cart" data-name="Café frio" data-price="25">Agregar al carrito</button>
+                <div class="edit-buttons" style="display: none;">
+                    <button class="delete-item" onclick="">Eliminar</button>
+                    <button class="update-price" onclick="">Actualizar Precio</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/frappe.jpg">
+                <h4>frappé</h4>
+                <p class="price out-of-stock">$30 MXN</p>
+                <button class="add-to-cart" data-name="Frappe" data-price="30">Agregar al carrito</button>
+                <div class="edit-buttons" style="display: none;">
+                    <button class="delete-item" onclick="">Eliminar</button>
+                    <button class="update-price" onclick="">Actualizar Precio</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/pan-dulce.jpg" alt="Pan dulce">
+                <h4>Pan dulce</h4>
+                <p class="price out-of-stock">$20 MXN</p>
+                <button class="add-to-cart" data-name="Pan dulce" data-price="20">Agregar al carrito</button>
+                <div class="edit-buttons" style="display: none;">
+                    <button class="delete-item" onclick="">Eliminar</button>
+                    <button class="update-price" onclick="">Actualizar Precio</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/crepa.jpg" alt="crepa">
+                <h4>crepas</h4>
+                <p class="price out-of-stock">$30 MXN</p>
+                <button class="add-to-cart" data-name="Crepa" data-price="30">Agregar al carrito</button>
+                <div class="edit-buttons" style="display: none;">
+                    <button class="delete-item" onclick="">Eliminar</button>
+                    <button class="update-price" onclick="">Actualizar Precio</button>
+                </div>
+            </div>
+        </div>
+        <p class="notice">* Los productos en rojo están fuera de stock.</p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-form">
+                <h4>Contáctanos</h4>
+                <form action="https://formspree.io/f/xeoqgojo" method="POST">
+                    <input type="text" name="name" placeholder="Nombre">
+                    <input type="email" name="email" placeholder="Correo">
+                    <textarea name="message" placeholder="Mensaje"></textarea>
+                    <button type="submit">Enviar</button>
+              </form>
+            </div>
+            <div class="contact-info">
+                <h4>Redes Sociales</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-x"></i></a>
+                </div>
+                <h4>Información de Contacto</h4>
+                <p>Teléfono: +52 123 456 7890</p>
+                <p>Email: contacto@cafedata.com</p>
+            </div>
+        </div>
+        <p>© 2024 Café Data. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Lionel Andres Messi</title>
+    <link rel="shortcut icon" href="imgs/icono.ico">
+    <link rel="stylesheet" href="styles/perfil.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="imgs/logo.png" alt="Logo de Café Data" class="logo">
+        </a>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <button class="logoutButton" id="logoutButton">Cerrar Sesión</button>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <h2>Perfil de Usuario</h2>
+        
+        <div class="profile-info">
+            <img src="imgs/perfil.jpg" alt="Foto de Lionel Andres Messi" class="profile-pic">
+            <div class="profile-details">
+                <h3 id="userName"></h3>
+                <p><strong>Puntos Canjeables:</strong> <span id="userPoints"></span></p>
+            </div>
+        </div>
+
+        <section class="order-history">
+            <h3>Historial de Pedidos</h3>
+            <table id="orderTable">
+                <thead>
+                    <tr>
+                        <th>Pedido</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="orderList">
+                    <!-- ordenes -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
